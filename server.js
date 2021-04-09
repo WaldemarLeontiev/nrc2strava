@@ -56,7 +56,7 @@ const getNikeActivitiesIds = async () => {
   let ids = [];
   let timeOffset = new Date();
   timeOffset.setDate(timeOffset.getDate() - 14);
-  timeOffset = Math.round(timeOffset / 1000);
+  timeOffset = Math.round(timeOffset);
 
   const nikeToken = await getNikeBearer();
   while (timeOffset !== undefined) {
