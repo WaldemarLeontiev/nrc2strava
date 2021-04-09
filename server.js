@@ -281,7 +281,6 @@ if (process.argv.includes("strava") && !process.argv.includes("nike")) {
           const filePath = `./activities/${file}`
           const form = new FormData();
 
-          form.append("description", "Uploaded from NRC");
           form.append("data_type", "gpx");
           form.append("file", fs.createReadStream(filePath));
 
